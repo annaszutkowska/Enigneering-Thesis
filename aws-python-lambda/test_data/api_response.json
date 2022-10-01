@@ -1,0 +1,63 @@
+[
+  {
+    "id": 10,
+    "device_id": "1234",
+    "version": "1.0",
+    "system_type": "TNS",
+    "name": "Module's name",
+    "description": "",
+    "lighting": false,
+    "primary_pump": false,
+    "primary_flow_meter": false,
+    "secondary_pump": false,
+    "secondary_flow_meter": false,
+    "first_peristaltic": false,
+    "second_peristaltic": false,
+    "third_peristaltic": false,
+    "fourth_peristaltic": false,
+    "fifth_peristaltic": false,
+    "sixth_peristaltic": false,
+    "ph_minus_peristaltic": false,
+    "ph_plus_peristaltic": false,
+    "first_fan": false,
+    "second_fan": false,
+    "min_water_level": false,
+    "max_water_level": false,
+    "measurements": {
+      "date": null,
+      "water_temperature": null,
+      "tds": null,
+      "ph": null,
+      "ec": null,
+      "do": null,
+      "orp": null,
+      "module": null
+    },
+    "config": {
+      "ph_auto_regulation": false,
+      "ec_auto_regulation": false,
+      "discord_notifications": false,
+      "start_day": "08:00:00",
+      "end_day": "22:00:00",
+      "pump_interval": "00:30:00",
+      "measurements_interval": "00:01:00",
+      "set_ec": "2.40",
+      "set_ph": "6.50",
+      "set_do": "7.0",
+      "set_orp": "0.10",
+      "nutrients_configs": [
+        {
+          "name": "Peristaltic pumps config",
+          "active": true,
+          "first_peristaltic": "0.0",
+          "second_peristaltic": "20.0",
+          "third_peristaltic": "30.0",
+          "fourth_peristaltic": "10.0",
+          "fifth_peristaltic": "0.0",
+          "sixth_peristaltic": "0.0"
+        }
+      ]
+    },
+    "device_status": false
+  }
+]

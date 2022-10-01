@@ -1,0 +1,19 @@
+org: ankaszutek
+app: thesis
+service: aws-python-lambda
+useDotenv: true
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+  region: eu-west-1
+
+functions:
+  hello:
+    handler: handler.lambda_handler
+    events:
+      - alexaSkill:
+          appId: ${env:ALEXA_SKILL_ID}
+          enabled: true
