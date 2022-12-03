@@ -3,14 +3,12 @@ from typing import Dict, Any, Optional
 
 
 class GenericResponse:
-    response: Dict[str, Any] = {'version': '1.0', 'sessionAttributes': None,
-                                'response': {'outputSpeech': None, "shouldEndSession": None}}
+    response: Dict[str, Any] = {'version': '1.0', 'sessionAttributes': None, 'response': {'outputSpeech': None}}
 
-    def generate_response(self, message: str, session_attributes: Dict = None, end_session: bool = False) -> None:
+    def generate_response(self, message: str, session_attributes: Dict = None) -> None:
         speech = self._build_plain_speech(message)
         self.response['sessionAttributes'] = self._get_session_attributes(session_attributes)
         self.response['response']['outputSpeech'] = speech
-        self.response['response']['shouldEndSession'] = end_session
 
     def get_response(self) -> str:
         return json.dumps(self.response)

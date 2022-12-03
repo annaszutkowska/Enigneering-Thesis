@@ -1,4 +1,4 @@
-org: ankaszutek
+org: annaszutkowska
 app: thesis
 service: aws-python-lambda
 useDotenv: true
@@ -11,7 +11,7 @@ provider:
   region: eu-west-1
 
 functions:
-  hello:
+  thesis:
     handler: handler.lambda_handler
     events:
       - alexaSkill:

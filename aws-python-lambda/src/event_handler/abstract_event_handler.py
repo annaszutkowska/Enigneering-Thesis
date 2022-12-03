@@ -5,9 +5,9 @@ from src.event_response.generic_response import GenericResponse
 
 
 class AbstractEventHandler(metaclass=ABCMeta):
+    response_generator = GenericResponse()
 
     def __init__(self, request: Dict[str, Any]):
-        self.response_generator = GenericResponse()
         self.request = request
         self._handle_event()
 

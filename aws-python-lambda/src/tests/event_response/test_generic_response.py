@@ -3,7 +3,7 @@ from unittest import TestCase
 
 from mock.mock import MagicMock
 
-from code.event_response.generic_response import GenericResponse
+from src.event_response.generic_response import GenericResponse
 
 
 class TestGenericResponse(TestCase):
@@ -12,7 +12,8 @@ class TestGenericResponse(TestCase):
         self.generic_response = GenericResponse()
         self.message = "Generic Response Test"
         self.plain_speech = {'type': "PlainText", 'text': self.message}
-        self.response = {'version': '1.0', 'sessionAttributes': {}, 'response': {'outputSpeech': self.plain_speech}}
+        self.response = {'version': '1.0', 'sessionAttributes': {},
+                         'response': {'outputSpeech': self.plain_speech, "shouldEndSession": False}}
         self.session_attributes = {"sessionId": "amzn1.echo-api.session.70acaef7-c686-469b-a427-2831bb7fa412"}
 
     def test_get_response(self) -> None:

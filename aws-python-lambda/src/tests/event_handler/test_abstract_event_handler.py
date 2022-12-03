@@ -3,8 +3,8 @@ from unittest import TestCase
 
 from mock.mock import MagicMock
 
-from code.event_handler.abstract_event_handler import AbstractEventHandler
-from tests.event_handler.test_event_handler_data import response, request
+from src.event_handler.abstract_event_handler import AbstractEventHandler
+from .test_event_handler_data import response, launch_request
 
 
 class SomeEventHandler(AbstractEventHandler):
@@ -16,7 +16,7 @@ class SomeEventHandler(AbstractEventHandler):
 class TestAbstractEventHandler(TestCase):
 
     def setUp(self) -> None:
-        self.handler = SomeEventHandler(request)
+        self.handler = SomeEventHandler(launch_request)
         self.response = response
 
     def test_get_response(self) -> None:
