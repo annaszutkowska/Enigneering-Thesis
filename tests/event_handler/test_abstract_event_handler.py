@@ -3,7 +3,7 @@ from unittest import TestCase
 
 from mock.mock import MagicMock
 
-from src.event_handler.abstract_event_handler import AbstractEventHandler
+from thesis.src.event_handler.abstract_event_handler import AbstractEventHandler
 from .test_event_handler_data import response, launch_request
 
 

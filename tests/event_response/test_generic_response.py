@@ -3,7 +3,7 @@ from unittest import TestCase
 
 from mock.mock import MagicMock
 
-from src.event_response.generic_response import GenericResponse
+from thesis.src.event_response.generic_response import GenericResponse
 
 
 class TestGenericResponse(TestCase):

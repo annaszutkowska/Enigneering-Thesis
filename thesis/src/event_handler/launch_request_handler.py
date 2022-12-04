@@ -1,4 +1,4 @@
-from src.event_handler.abstract_event_handler import AbstractEventHandler
+from .abstract_event_handler import AbstractEventHandler
 
 
 class LaunchRequestHandler(AbstractEventHandler):

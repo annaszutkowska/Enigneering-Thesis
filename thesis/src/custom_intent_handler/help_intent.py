@@ -1,4 +1,4 @@
-from src.custom_intent_handler.abstract_intent import AbstractIntent
+from .abstract_intent import AbstractIntent
 
 
 class HelpIntent(AbstractIntent):

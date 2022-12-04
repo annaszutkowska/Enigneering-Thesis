@@ -1,6 +1,5 @@
-org: annaszutkowska
-app: thesis
-service: aws-python-lambda
+org: ankaszutek
+service: thesis
 useDotenv: true
 
 frameworkVersion: '3'
@@ -11,7 +10,7 @@ provider:
   region: eu-west-1
 
 functions:
-  thesis:
+  luna_scientific:
     handler: handler.lambda_handler
     events:
       - alexaSkill:

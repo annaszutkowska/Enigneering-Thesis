@@ -1,7 +1,7 @@
 from abc import ABCMeta, abstractmethod
 from typing import Dict, Any
 
-from src.event_response.generic_response import GenericResponse
+from thesis.src.event_response.generic_response import GenericResponse
 
 
 class AbstractEventHandler(metaclass=ABCMeta):

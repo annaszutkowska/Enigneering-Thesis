@@ -1,7 +1,7 @@
 from abc import ABCMeta, abstractmethod
 from typing import Dict, Any, Tuple
 
-from src.custom_intent_handler.api_response import response
+from .api_response import response
 
 
 class AbstractIntent(metaclass=ABCMeta):
