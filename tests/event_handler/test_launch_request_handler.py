@@ -2,7 +2,7 @@ from unittest import TestCase
 
 from mock.mock import MagicMock
 
-from .test_event_handler_data import response, launch_request
+from tests.event_handler.test_event_handler_data import response, launch_request
 from thesis.src.event_handler.launch_request_handler import LaunchRequestHandler
 
 

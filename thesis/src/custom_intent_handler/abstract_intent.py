@@ -2,6 +2,8 @@ from abc import ABCMeta, abstractmethod
 from typing import Dict, Any, Tuple
 
 from .api_response import response
+from ..io_tools.exception import UserOperationError
+from ..io_tools.log_informations import MODULE_DOES_NOT_EXIST
 
 
 class AbstractIntent(metaclass=ABCMeta):
@@ -33,16 +35,18 @@ class AbstractIntent(metaclass=ABCMeta):
     def _get_module_data(self) -> Tuple[str, int]:
         module_name = self.request_data.get("module_name", {}).get("value")
         if module_name:
-            module_index = self._check_if_valid(module_name)
-            return module_name, module_index
-        # TODO: error
+            try:
+                module_index = self._check_if_valid(module_name)
+                return module_name, module_index
+            except UserOperationError as e:
+                raise e  # TODO match name a little better (The Levenshtein Distance)
+        raise UserOperationError()
 
     def _check_if_valid(self, module_name: str) -> int:
         for position, module in enumerate(self._get_module_list()):
             if module_name.casefold() == module.casefold():
                 return position
-            #TODO: error
-        #TODO: error
+        raise UserOperationError(MODULE_DOES_NOT_EXIST)
 
     def _get_measurements(self, module_index: int, stat: str) -> int:
         return self.response[module_index]["measurements"].get(stat)

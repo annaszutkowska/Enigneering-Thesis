@@ -1,7 +1,9 @@
 from abc import ABCMeta, abstractmethod
 from typing import Dict, Any
 
-from thesis.src.event_response.generic_response import GenericResponse
+from ..event_response.error_response import ErrorResponse
+from ..event_response.generic_response import GenericResponse
+from ..io_tools.exception import UserOperationError
 
 
 class AbstractEventHandler(metaclass=ABCMeta):
