@@ -6,7 +6,7 @@ from ..io_tools.exception import UserOperationError
 
 
 class IntentRequestHandler(AbstractEventHandler):
-    intent_module = "src.custom_intent_handler"
+    intent_module = "thesis.src.custom_intent_handler"
 
     def _handle_event(self) -> None:
         module = importlib.import_module(self.intent_module, package="event_handler")

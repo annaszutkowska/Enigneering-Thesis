@@ -8,7 +8,7 @@ class AbstractStatisticIntent(AbstractIntent):
     interval = None
 
     def generate_response(self) -> str:
-        module_name, module_index = self._get_module_data()
+        module_name, module_index = self.get_module_data()
         sensor_average = self._get_sensor_average(module_index)
         return f"Average {self.sensor_name} in module {module_name} for the past {self.interval} is {sensor_average} " \
                f"{self.sensor_unit}"

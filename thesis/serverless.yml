@@ -1,3 +1,4 @@
+app: thesis
 org: ankaszutek
 service: thesis
 useDotenv: true

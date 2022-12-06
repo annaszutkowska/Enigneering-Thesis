@@ -6,10 +6,10 @@ from .abstract_response import AbstractResponse
 class GenericResponse(AbstractResponse):
     response: Dict[str, Any] = {
         'version': '1.0',
-        'sessionAttributes': None,
+        'sessionAttributes': {},
         'response': {
             'outputSpeech': {},
-            "shouldEndSession": None
+            "shouldEndSession": False
         }
     }
 

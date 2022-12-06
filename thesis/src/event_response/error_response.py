@@ -1,33 +1,15 @@
-import json
-from typing import Dict, Any
+from typing import Dict
 
-from .abstract_response import AbstractResponse
-from ..io_tools.log_informations import INTERNAL_ERROR
+from .generic_response import GenericResponse
 
 
-class ErrorResponse(AbstractResponse):
-    response: Dict[str, Any] = {
-        "event": {
-            "header": {
-                "namespace": "Alexa",
-                "name": "ErrorResponse",
-                "messageId": "0011",
-                "payloadVersion": "3"
-            },
-            "endpoint": {
-                "endpointId": "Test"
-            },
-            "payload": {}
-        }
-    }
+class ErrorResponse(GenericResponse):
 
-    def generate_response(self, message: str,
-                          error_type: str = "INTERNAL_ERROR", error_message: str = INTERNAL_ERROR) -> None:
-        self.response['event']['payload'] = self._build_payload(error_type, error_message)
-
-    def get_response(self) -> str:
-        return json.dumps(self.response)
+    def generate_response(self, error_msg: str, session_attributes: Dict = None, end_session: bool = False) -> None:
+        message = self._build_error_message(error_msg)
+        super(ErrorResponse, self).generate_response(message, session_attributes, end_session)
 
     @staticmethod
-    def _build_payload(error_type: str, message: str) -> Dict[str, Any]:
-        return {'type': error_type, 'message': message}
+    def _build_error_message(error_msg: str = "") -> str:
+        message = "Sorry, there was an error while handling the request. {}".format(error_msg)
+        return message
