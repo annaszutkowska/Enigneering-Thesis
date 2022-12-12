@@ -1,0 +1,331 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "luna scientific",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ModuleListIntent",
+                    "slots": [],
+                    "samples": [
+                        "What modules are there",
+                        "Module list",
+                        "Give me a list of modules"
+                    ]
+                },
+                {
+                    "name": "TemperatureIntent",
+                    "slots": [
+                        {
+                            "name": "module_name",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "Check water temperature of {module_name}",
+                                "Check {module_name}",
+                                "{module_name}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "Give me the temperature in module {module_name}",
+                        "What's the temperature of module {module_name}",
+                        "What's the temperature of water",
+                        "What's the water temperature of {module_name}",
+                        "What's the temperature in module {module_name}",
+                        "what's the temperature",
+                        "what's the water temperature",
+                        "what's the temperature of water in module {module_name}"
+                    ]
+                },
+                {
+                    "name": "PHIntent",
+                    "slots": [
+                        {
+                            "name": "module_name",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "Of {module_name} ",
+                                "Of module {module_name} ",
+                                "Module {module_name}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "What's the pH level of water in module {module_name}",
+                        "What's the pH level of water",
+                        "What's the pH",
+                        "What's the pH level"
+                    ]
+                },
+                {
+                    "name": "TDSIntent",
+                    "slots": [
+                        {
+                            "name": "module_name",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "Of {module_name} ",
+                                "Of module {module_name} ",
+                                "Module {module_name}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "What's the TDS level of water in module {module_name}",
+                        "What's the TDS level of water",
+                        "What's the TDS",
+                        "What's the TDS level"
+                    ]
+                },
+                {
+                    "name": "ECIntent",
+                    "slots": [
+                        {
+                            "name": "module_name",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "Of {module_name} ",
+                                "Of module {module_name} ",
+                                "Module {module_name}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "What's the EC level of water in module {module_name}",
+                        "What's the EC level of water",
+                        "What's the EC",
+                        "What's the EC level"
+                    ]
+                },
+                {
+                    "name": "PHStatisticIntent",
+                    "slots": [
+                        {
+                            "name": "module_name",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "{module_name}"
+                            ]
+                        },
+                        {
+                            "name": "start_date",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "end_date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "what's the average pH level of water in module until {end_date}",
+                        "what's the average pH level of water in module from {start_date} to {end_date}",
+                        "what's the average pH level of water in module from {start_date}",
+                        "what's the average pH level of water in module {module_name}",
+                        "what's the average pH level in module {module_name}",
+                        "what's the average pH level of module {module_name}"
+                    ]
+                },
+                {
+                    "name": "TemperatureStatisticIntent",
+                    "slots": [
+                        {
+                            "name": "module_name",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "{module_name}"
+                            ]
+                        },
+                        {
+                            "name": "start_date",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "end_date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "what's the average temperature of water in module until {end_date}",
+                        "what's the average temperature of water in module from {start_date} to {end_date}",
+                        "what's the average temperature of water in module from {start_date}",
+                        "what's the average temperature of water in module {module_name}",
+                        "what's the average temperature in module {module_name}",
+                        "what's the average temperature of module {module_name}"
+                    ]
+                },
+                {
+                    "name": "TDSStatisticIntent",
+                    "slots": [
+                        {
+                            "name": "module_name",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "{module_name}"
+                            ]
+                        },
+                        {
+                            "name": "start_date",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "end_date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "what's the average TDS level of water in module until {end_date}",
+                        "what's the average TDS level of water in module from {start_date} to {end_date}",
+                        "what's the average TDS level of water in module from {start_date}",
+                        "what's the average TDS level of water in module {module_name}",
+                        "what's the average TDS level in module {module_name}",
+                        "what's the average TDS level of module {module_name}"
+                    ]
+                },
+                {
+                    "name": "ECStatisticIntent",
+                    "slots": [
+                        {
+                            "name": "module_name",
+                            "type": "AMAZON.SearchQuery",
+                            "samples": [
+                                "{module_name}"
+                            ]
+                        },
+                        {
+                            "name": "start_date",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "end_date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "what's the average EC level of water in module until {end_date}",
+                        "what's the average EC level of water in module from {start_date} to {end_date}",
+                        "what's the average EC level of water in module from {start_date}",
+                        "what's the average EC level of water in module {module_name}",
+                        "what's the average EC level in module {module_name}",
+                        "what's the average EC level of module {module_name}"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "TemperatureIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "module_name",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.5885725240.684081389562"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "PHIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "module_name",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.913734004359.305465218060"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "TemperatureStatisticIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "module_name",
+                            "type": "AMAZON.SearchQuery",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1094995909020.905301788461"
+                            }
+                        },
+                        {
+                            "name": "start_date",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "end_date",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.5885725240.684081389562",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "The temperature of water in what module would you like me to check?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.913734004359.305465218060",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Water pH of what module would you like me to check?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1094995909020.905301788461",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Temperature in what module would you like me to check?"
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,117 @@
+{
+	"version": "1.0",
+	"session": {
+		"new": false,
+		"sessionId": "amzn1.echo-api.session.a5b6f8bc-0643-486f-963f-d9fa921c117e",
+		"application": {
+			"applicationId": "amzn1.ask.skill.4f044bbe-a8da-4aa8-b28e-04d7659f8ace"
+		},
+		"attributes": {},
+		"user": {
+			"userId": "amzn1.ask.account.AEUZACJDZIZG3XHVZLNBZGZEENMP4ED3KWACDWL7DISZ2OU7R4FTN644RDTIYNYURTPG45WGXHAMKPOHVTGADXF6MPL36YUD26JDNBSZI2YDW43HS4H4T4363TZZEC4JMJB3VHACHUL6M2LHUBFPDAUR6IXCMXA6OLSLKILLRQUKF5JD2VJUVLHNPRTBTZ37DU2DQSTQK345ZOI"
+		}
+	},
+	"context": {
+		"Viewports": [
+			{
+				"type": "APL",
+				"id": "main",
+				"shape": "RECTANGLE",
+				"dpi": 213,
+				"presentationType": "STANDARD",
+				"canRotate": false,
+				"configuration": {
+					"current": {
+						"mode": "HUB",
+						"video": {
+							"codecs": [
+								"H_264_42",
+								"H_264_41"
+							]
+						},
+						"size": {
+							"type": "DISCRETE",
+							"pixelWidth": 1280,
+							"pixelHeight": 800
+						}
+					}
+				}
+			}
+		],
+		"Viewport": {
+			"experiences": [
+				{
+					"arcMinuteWidth": 346,
+					"arcMinuteHeight": 216,
+					"canRotate": false,
+					"canResize": false
+				}
+			],
+			"mode": "HUB",
+			"shape": "RECTANGLE",
+			"pixelWidth": 1280,
+			"pixelHeight": 800,
+			"dpi": 213,
+			"currentPixelWidth": 1280,
+			"currentPixelHeight": 800,
+			"touch": [
+				"SINGLE"
+			],
+			"video": {
+				"codecs": [
+					"H_264_42",
+					"H_264_41"
+				]
+			}
+		},
+		"Extensions": {
+			"available": {
+				"aplext:backstack:10": {}
+			}
+		},
+		"System": {
+			"application": {
+				"applicationId": "amzn1.ask.skill.4f044bbe-a8da-4aa8-b28e-04d7659f8ace"
+			},
+			"user": {
+				"userId": "amzn1.ask.account.AEUZACJDZIZG3XHVZLNBZGZEENMP4ED3KWACDWL7DISZ2OU7R4FTN644RDTIYNYURTPG45WGXHAMKPOHVTGADXF6MPL36YUD26JDNBSZI2YDW43HS4H4T4363TZZEC4JMJB3VHACHUL6M2LHUBFPDAUR6IXCMXA6OLSLKILLRQUKF5JD2VJUVLHNPRTBTZ37DU2DQSTQK345ZOI"
+			},
+			"device": {
+				"deviceId": "amzn1.ask.device.AHFEI62QLMB3JCRIKMNRPILWLP2IGRHXVKYSBS2WUSXSCR3K5YTFGQTEUSADMFXJ2WQI3DHUDTQ7RKIBDVJD6Q4YW57PHS4ZR2RYNS32JJCE3BUH7EET7CW26UEOF5L2OHSDS5IPKBRVZJH4NDHFLTZZSSQTRAGWVXHPMTMSKIS4SZVQ5BGVA",
+				"supportedInterfaces": {}
+			},
+			"apiEndpoint": "https://api.amazonalexa.com",
+			"apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjRmMDQ0YmJlLWE4ZGEtNGFhOC1iMjhlLTA0ZDc2NTlmOGFjZSIsImV4cCI6MTY3MDQ2MzU3OCwiaWF0IjoxNjcwNDYzMjc4LCJuYmYiOjE2NzA0NjMyNzgsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQUFEOVJVUjMxTU1HZ3ROaEdHZGNtSCszS2dFQUFBQUFBQUFkQmhqeUtsKzBRMXE3MytNa2M2NmtNKzVOQkttRkhkZ09BdEVNZ24xc1dHTFREUWtWODZRRzdpTnc4MzFmSFIwUCtPVjhQdzhnMWxFZ2F6RWhDcGFEa3UvTGswN3ZYZkhwRHUyNlNDd2xBRC9jdTFVdGdmbitVQ21Iem9CVUN2ZS9hajM2czBPekVBajdXZ3U3Z1JTM09rTlpwMGp1eTlzUStma3pGRnFWcFJSVmNRNlFqb1h3RGdzd2MyL3ZvQVJRTlM2QUI3ZThuNW93MWE4TzloajhHZ3dKR0ZkcnhtVDIySldNbGU2WDl0OHVmN3V3bXArNHVhUDE3ZEVVc3FGSFF6QVloWXc2K210OFlXbk84c0ExdHJMQjFtK2dmbWlabm1HcW9HdGN4WUFxdlFrT1A5ZlIwclJQUWdIQmVqbm9NcFJWbG1XOHFZbEhTSktoMlpsa1QxTy9Wb2NYUXB4d3NTVldDY3V2Q2hsUmk4cnhXR1l2Wjd4bEdoWEw3dDJJWnViUXNERGNxVHFVIiwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFIRkVJNjJRTE1CM0pDUklLTU5SUElMV0xQMklHUkhYVktZU0JTMldVU1hTQ1IzSzVZVEZHUVRFVVNBRE1GWEoyV1FJM0RIVURUUTdSS0lCRFZKRDZRNFlXNTdQSFM0WlIyUllOUzMySkpDRTNCVUg3RUVUN0NXMjZVRU9GNUwyT0hTRFM1SVBLQlJWWkpINE5ESEZMVFpaU1NRVFJBR1dWWEhQTVRNU0tJUzRTWlZRNUJHVkEiLCJ1c2VySWQiOiJhbXpuMS5hc2suYWNjb3VudC5BRVVaQUNKRFpJWkczWEhWWkxOQlpHWkVFTk1QNEVEM0tXQUNEV0w3RElTWjJPVTdSNEZUTjY0NFJEVElZTllVUlRQRzQ1V0dYSEFNS1BPSFZUR0FEWEY2TVBMMzZZVUQyNkpETkJTWkkyWURXNDNIUzRINFQ0MzYzVFpaRUM0Sk1KQjNWSEFDSFVMNk0yTEhVQkZQREFVUjZJWENNWEE2T0xTTEtJTExSUVVLRjVKRDJWSlVWTEhOUFJUQlRaMzdEVTJEUVNUUUszNDVaT0kifX0.RAnJUNp0KtMTPf7s1lI0Ms86OqYF6GonIFn2CsZhgu_4eysBNNNzqIj8YmFjvIgUWTQl-EJbxlk1WnckxFQoKWpijPq4Z_KMho9zDXBpFtrdUKfFdoXd31O-oU74AYfnFProariflotBCuLNVp9dsu08qP6-Iouh4rQlMSElEhURnE08tAMgLCrRQyPZJTMBfD4WulGZZOnmxQo3KbKrh922TD1-Kq3od4xzLuSeeNEsUR8E9gbi8kkTdeAfxb_mqQjEvqhAGOkSGMzpSFDRw0KKmfwhqWRC5BWCqZood-lZqEbzK7D4odywWHSvo5DtLbxBjRjiv04olZgtCQAWfw"
+		}
+	},
+	"request": {
+		"type": "IntentRequest",
+		"requestId": "amzn1.echo-api.request.584dc127-6944-46cb-a73c-4c60dfc17398",
+		"locale": "en-GB",
+		"timestamp": "2022-12-08T01:34:38Z",
+		"intent": {
+			"name": "TemperatureStatisticIntent",
+			"confirmationStatus": "NONE",
+			"slots": {
+				"end_date": {
+					"name": "end_date",
+					"confirmationStatus": "NONE",
+					"source": "USER"
+				},
+				"module_name": {
+					"name": "module_name",
+					"value": "cannabis Veera",
+					"confirmationStatus": "NONE",
+					"source": "USER"
+				},
+				"start_date": {
+					"name": "start_date",
+					"value": "2022-12-03",
+					"confirmationStatus": "NONE",
+					"source": "USER"
+				}
+			}
+		},
+		"dialogState": "COMPLETED"
+	}
+}

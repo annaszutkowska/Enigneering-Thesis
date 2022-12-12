@@ -1,13 +1,15 @@
 from .abstract_intent import AbstractIntent
+from ..io_tools.exception import EndpointError
+from ..io_tools.log_informations import MEASUREMENT_EMPTY
 
 
 class AbstractMeasurementIntent(AbstractIntent):
-    sensor_name: str = None
-    sensor_key: str = None
-    sensor_unit: str = None
+    sensor_name: str = ""
+    sensor_key: str = ""
+    sensor_unit: str = ""
 
     def generate_response(self) -> str:
-        module_name, module_index = self._get_module_data()
+        module_name, module_index = self.get_module_data()
         sensor_value = self._get_sensor_value(module_index)
         return f"{self.sensor_name} in module {module_name} is {sensor_value} {self.sensor_unit}"
 
@@ -15,7 +17,7 @@ class AbstractMeasurementIntent(AbstractIntent):
         value = self._get_measurements(module_index, self.sensor_key)
         if value:
             return value
-        # TODO: error
+        raise EndpointError(MEASUREMENT_EMPTY)
 
 
 class TemperatureIntent(AbstractMeasurementIntent):

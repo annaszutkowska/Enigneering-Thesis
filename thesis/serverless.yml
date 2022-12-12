@@ -17,3 +17,14 @@ functions:
       - alexaSkill:
           appId: ${env:ALEXA_SKILL_ID}
           enabled: true
+    environment:
+      LUNA_APP_URL: ${env:LUNA_APP_URL}
+      LUNA_APP_USERNAME: ${env:LUNA_APP_USERNAME}
+      LUNA_APP_PASSWORD: ${env:LUNA_APP_PASSWORD}
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux
